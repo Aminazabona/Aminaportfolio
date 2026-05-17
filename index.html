@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amina | Web Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+    <!-- Background Decor -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Header & Nav -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span>Amina</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero container">
+            <div class="hero-content reveal-left">
+                <p class="subtitle">Bienvenue dans mon portfolio !</p>
+                <h1>Salut, je suis <span>Amina</span></h1>
+                <p class="description">
+                    Je suis une développeuse web passionnée par la création d’applications web modernes et simples. Je conçois des interfaces propres et des sites web responsives.
+                </p>
+                <div class="hero-btns">
+                    <a href="./Asset/images/Amina Zabona Esther CV-1.pdf" class="btn btn-primary">Télécharger CV</a>
+                    <a href="aminaweather-app.netlify.app/" class="btn btn-outline">Découvrez mes réalisations. <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-image reveal-right">
+                <div class="image-wrapper">
+                    <img src="./Asset/images/Amina.jpg" alt="Amina Profile">
+                </div>
+                <!-- Floating Elements -->
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+
+            <aside class="social-sidebar">
+                <span class="follow-text">Suivez-moi.</span>
+                <div class="line"></div>
+                <a href="https://www.linkedin.com/in/amina-zabona/"><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Aminazabona/"><i class="fa-brands fa-github"></i></a>
+            </aside>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about container">
+            <h2 class="section-title reveal-up">À propos <span>moi</span></h2>
+            <div class="about-grid">
+                <div class="about-text reveal-left">
+                    <p>Je suis Amina, une développeuse web dévouée et passionnée, spécialisée dans la création de sites web modernes, intuitifs et responsives. Je maîtrise le HTML, le CSS, le JavaScript ainsi que plusieurs frameworks de développement web. J’aime transformer les idées en réalité.</p>
+                </div>
+                <div class="about-stats-list reveal-right">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Plus de 1 ans d’expérience</li>
+                        <li><i class="fas fa-check-circle"></i> Expertise en développement frontend</li>
+                        <li><i class="fas fa-check-circle"></i> Basée à GOMA, RDC</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about-cards reveal-up">
+                <div class="mini-profile">
+                    <img src="./Asset/images/photoabout.jpg" alt="Amina">
+                </div>
+                <div class="stat-box glass">
+                    <h3>+5</h3>
+                    <p>Projets réalisés</p>
+                </div>
+                <div class="stat-box glass">
+                    <h3>+1</h3>
+                    <p>Années d’expérience</p>
+                </div>
+                <div class="stat-box glass">
+                    <h3>+10</h3>
+                    <p>Clients satisfaits</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Mon Portfolio</h2>
+                <p>Voici quelques-uns de mes projets récents mettant en valeur mes compétences en développement web et en design UI/UX.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Card 1 -->
+                <div class="portfolio-card glass reveal-up">
+                    <div class="card-img">
+                        <img src="./Asset/images/💼 Smart Money Dashboard Design.jpg" alt="Finance Dashboard">
+                    </div>
+                    <div class="card-info">
+                        <h4>Finance Dashboard</h4>
+                        <p>Web Development</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="portfolio-card glass reveal-up" style="transition-delay: 0.1s;">
+                    <div class="card-img">
+                        <img src="./Asset/images/Gemini_Generated_Image_2nn4622nn4622nn4.png" alt="Creative Agency">
+                    </div>
+                    <div class="card-info">
+                        <h4>Creative Agency</h4>
+                        <p>UI/UX Design</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="portfolio-card glass reveal-up" style="transition-delay: 0.2s;">
+                    <div class="card-img">
+                        <img src="./Asset/images/Gemini_Generated_Image_tx3mg9tx3mg9tx3m.png" alt="E-commerce">
+                    </div>
+                    <div class="card-info">
+                        <h4>E-commerce Site</h4>
+                        <p>Web Development and UI/UX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center reveal-up">
+                <a href="#" class="btn btn-primary">Voir tous les projets.</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact container">
+            <h2 class="section-title reveal-up">Contactez-moi.</h2>
+            <p class="reveal-up">Vous avez une question ou souhaitez travailler avec moi ? N’hésitez pas à me contacter.</p>
+
+            <div class="contact-wrapper">
+                <form id="contact-form" class="reveal-left">
+                    <div class="input-row">
+                        <input type="text" name="user_name" placeholder="Nom" required>
+                        <input type="email" name="user_email" placeholder=" Email" required>
+                    </div>
+                    <input type="text" name="subject" placeholder="Sujet" required>
+                    <textarea name="message" rows="5" placeholder=" Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Envoyer un message.</button>
+                    <p id="form-status"></p>
+                </form>
+
+                <div class="contact-card glass reveal-right">
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>aminazabona8@gmail.com</span>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Goma, RDC</span>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="contact-illustration">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=200" alt="Contact illustration">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <p>© 2026 Amina. All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
